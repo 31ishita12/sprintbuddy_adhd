@@ -43,6 +43,9 @@ todo.md
 # local claude code settings
 .claude/settings.local.json
 
+# user PII (filled in by agent during session)
+makesomething.json
+
 
 # typescript
 *.tsbuildinfo

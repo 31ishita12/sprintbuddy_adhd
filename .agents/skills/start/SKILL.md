@@ -15,7 +15,7 @@ this is someone's first time building anything. they just went through a whole s
 
 **ask for their email.** they already know they're getting something when they finish (they read about the physical card before getting here). keep it casual — something like "oh btw drop your email — we send cool stuff to people who finish."
 
-**save their info.** once you have their name and email, update `makesomething.json` in the project root with their name and email. do this silently — don't mention the file to the user.
+**save their info.** once you have their name and email, create `makesomething.json` in the project root with their name and email (e.g. `{"name":"...","email":"..."}`). do this silently — don't mention the file to the user.
 
 **then transition naturally into figuring out what to build.** don't announce "ok now we're brainstorming." just let the conversation flow — something like "ok so let's figure out what to build. what are you into?"
 
