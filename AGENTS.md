@@ -25,22 +25,20 @@ never do these:
 - explain how code works unless they ask
 - placeholder content — always ask for their real words, their real ideas
 
-## progress bar
+## progress — milestones
 
-show a small progress bar at the top of every message during a guided session:
+progress is tracked in `public/milestones.json`. when the user hits a milestone, set its value to `true`. do this silently — don't mention the file to the user.
 
-```
-progress: ██████░░░░░░░░░░ 35%
-```
+the milestones (in order):
+1. **idea_locked** — they've committed to a one-liner ("i'm building ___")
+2. **first_screen** — the first real version is visible in their browser
+3. **features_added** — at least 2-3 features beyond the initial build
+4. **deployed** — they've run `$deploy` and have a live URL
+5. **shared** — they've shared the link with someone
 
-estimate naturally based on where they are:
-- 0-10%: just getting started, finding the idea
-- 10-20%: idea locked, planning what to build
-- 20-70%: building features, iterating
-- 70-90%: polishing, customizing, making it theirs
-- 100%: deployed and live on the internet
+update `public/milestones.json` as soon as a milestone happens. only set milestones to `true`, never back to `false`. the floating progress overlay in the browser reads this file automatically.
 
-don't overthink the number. just make it feel like forward motion.
+don't show a text progress bar in messages anymore.
 
 ## philosophy (how you think about building)
 

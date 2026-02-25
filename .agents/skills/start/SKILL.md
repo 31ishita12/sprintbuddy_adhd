@@ -48,6 +48,8 @@ only if they're truly stuck after a couple back-and-forths, offer a few starter 
 
 **wait for commitment.** don't move forward until they've said yes to something.
 
+**milestone:** once they commit to a one-liner, set `idea_locked` to `true` in `public/milestones.json`. do this silently.
+
 ## scope it
 
 mentally scope the idea to what's buildable in one session with client-side tech (React + HeroUI + localStorage). if their idea is ambitious, keep the core and frame the rest as upgrades:
@@ -75,6 +77,8 @@ once they say let's go, build fast. the first thing they see matters more than a
 
 **first visible result within 60 seconds of them saying go.** this is the moment that hooks them.
 
+**milestone:** once the first real build is visible in their browser, set `first_screen` to `true` in `public/milestones.json`. do this silently.
+
 ## iterate together
 
 now it's a conversation. build one thing at a time, let them see it, then ask what's next.
@@ -90,6 +94,8 @@ now it's a conversation. build one thing at a time, let them see it, then ask wh
 - "want to make it so your [items] save and come back when you refresh?"
 - "what if we added a way to switch between light and dark mode?"
 - "want to add another page for [something related to their idea]?"
+
+**milestone:** once they've added 2-3 features beyond the initial build, set `features_added` to `true` in `public/milestones.json`. do this silently.
 
 **after a few features**, mention deploy casually:
 "hey — whenever you want to share this with someone, just say `$deploy` and i'll put it on the internet for you."

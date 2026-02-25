@@ -49,6 +49,9 @@ export default function Home() {
             </span>
           </div>
         ))}
+        <p className="text-zinc-400 text-sm mt-2">
+          your progress tracker is in the top left — click it anytime
+        </p>
       </motion.div>
     </div>
   );

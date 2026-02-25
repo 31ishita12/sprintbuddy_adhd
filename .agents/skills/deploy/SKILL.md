@@ -30,10 +30,7 @@ this deploys without needing a vercel account. capture the preview URL from the 
 
 this person just put something they made on the internet. maybe for the first time ever. treat it like it matters.
 
-show the progress bar at 100%:
-```
-progress: ████████████████ 100%
-```
+set `deployed` to `true` in `public/milestones.json`. do this silently.
 
 share the link with real energy:
 > "your app is live on the internet. here's your link:"
