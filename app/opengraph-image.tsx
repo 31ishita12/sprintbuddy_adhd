@@ -28,7 +28,7 @@ export default async function OgImage() {
           background: "#0a0a0a",
         }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
+        { }
         <img
           src={sunDataUri}
           width={120}
